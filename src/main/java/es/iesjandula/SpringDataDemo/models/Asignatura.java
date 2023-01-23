@@ -20,7 +20,7 @@ public class Asignatura
     @Column(length = 2)
     private int curso;
 
-    @Column(length = 25)
+    @Column(length = 100)
     private String nombre;
 
     @Column(length = 50)

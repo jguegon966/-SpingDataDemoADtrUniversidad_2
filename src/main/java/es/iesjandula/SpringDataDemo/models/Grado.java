@@ -14,7 +14,7 @@ public class Grado
     @Column(length = 10)
     private Long id;
 
-    @Column(length = 25, nullable = false)
+    @Column(length = 100, nullable = false)
     private String nombre;
 
     public Grado()

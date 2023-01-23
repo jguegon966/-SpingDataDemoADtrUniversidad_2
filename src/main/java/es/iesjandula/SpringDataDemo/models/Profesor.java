@@ -16,7 +16,7 @@ public class Profesor
     @Column(length = 9, unique = true)
     private String nif;
 
-    @Column(length = 25, nullable = false)
+    @Column(length = 100, nullable = false)
     private String nombre;
 
     @Column(length = 50, nullable = false)
