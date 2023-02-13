@@ -1,6 +1,8 @@
 package es.iesjandula.SpringDataDemo;
 
+import es.iesjandula.SpringDataDemo.models.consultas.ConsultasAlumno;
 import es.iesjandula.SpringDataDemo.parseadores.*;
+import es.iesjandula.SpringDataDemo.repository.IAlumnoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -29,6 +31,9 @@ public class SpringDataDemoApplication implements CommandLineRunner
 	@Autowired
 	private ParseaMatricula parseaMatricula;
 
+	@Autowired
+	private ConsultasAlumno consultasAlumno;
+
 	public static void main(String[] args)
 	{
 		SpringApplication.run(SpringDataDemoApplication.class, args);
@@ -44,14 +49,17 @@ public class SpringDataDemoApplication implements CommandLineRunner
 	public void run(String... args) throws Exception
 	{
 
+		//parseaAlumno.parsearAlumno();
+		//parseaCurso.parsearCurso();
+		//parseaDepartamento.parsearDepartamento();
+		//parseaGrado.parsearGrado();
+		//parseaProfesor.parseaProfesores();
+		//parseaAsignatura.parseaAsignaturas();
+		//parseaMatricula.parseaMatriculas();
 
-		parseaAlumno.parsearAlumno();
-		parseaCurso.parsearCurso();
-		parseaDepartamento.parsearDepartamento();
-		parseaGrado.parsearGrado();
-		parseaProfesor.parseaProfesores();
-		parseaAsignatura.parseaAsignaturas();
-		parseaMatricula.parseaMatriculas();
+		consultasAlumno.buscarAlumnoPorId(5L);
+
+		consultasAlumno.buscarAlumnoPorNombre("Juan");
 
 	}
 
