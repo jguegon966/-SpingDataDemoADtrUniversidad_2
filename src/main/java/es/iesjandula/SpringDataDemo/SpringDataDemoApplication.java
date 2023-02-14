@@ -1,6 +1,8 @@
 package es.iesjandula.SpringDataDemo;
 
 import es.iesjandula.SpringDataDemo.models.consultas.ConsultasAlumno;
+import es.iesjandula.SpringDataDemo.models.consultas.ConsultasAsignatura;
+import es.iesjandula.SpringDataDemo.models.consultas.ConsultasProfesor;
 import es.iesjandula.SpringDataDemo.parseadores.*;
 import es.iesjandula.SpringDataDemo.repository.IAlumnoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +36,12 @@ public class SpringDataDemoApplication implements CommandLineRunner
 	@Autowired
 	private ConsultasAlumno consultasAlumno;
 
+	@Autowired
+	private ConsultasProfesor consultasProfesor;
+
+	@Autowired
+	private ConsultasAsignatura consultasAsignatura;
+
 	public static void main(String[] args)
 	{
 		SpringApplication.run(SpringDataDemoApplication.class, args);
@@ -60,6 +68,12 @@ public class SpringDataDemoApplication implements CommandLineRunner
 		consultasAlumno.buscarAlumnoPorId(5L);
 
 		consultasAlumno.buscarAlumnoPorNombre("Juan");
+
+		consultasProfesor.buscarProfesorPorId(2L);
+
+		consultasProfesor.buscarProfesorPorNombre("Zoe");
+
+		consultasAsignatura.buscar10primerasAsignaturas();
 
 	}
 

@@ -100,4 +100,18 @@ public class Asignatura
     public void setIdProfesor(Profesor idProfesor) {
         this.idProfesor = idProfesor;
     }
+
+    @Override
+    public String toString() {
+        return "Asignatura{" +
+                "id=" + id +
+                ", creditos=" + creditos +
+                ", cuatrimestre=" + cuatrimestre +
+                ", curso=" + curso +
+                ", nombre='" + nombre + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", idGrado=" + idGrado +
+                ", idProfesor=" + idProfesor +
+                '}';
+    }
 }
