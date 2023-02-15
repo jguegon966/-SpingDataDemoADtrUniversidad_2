@@ -26,4 +26,12 @@ public class ConsultasAlumno
 
     }
 
+    public void buscar10primerosAlumnos()
+    {
+
+        System.out.println(iAlumnoRepository.findFirst10ByOrderByNombreAsc());
+
+    }
+
+
 }

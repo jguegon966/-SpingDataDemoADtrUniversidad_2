@@ -25,4 +25,25 @@ public class ConsultasProfesor
 
     }
 
+    public void buscarPorNombreDepartamento(String nameDepartamento)
+    {
+
+        System.out.println(iProfesorRepository.findByDepartamentoName(nameDepartamento));
+
+    }
+
+    public void contarPorNombreDepartamento(String nameDepartamento)
+    {
+
+        System.out.println(iProfesorRepository.findByDepartamentoCountName(nameDepartamento));
+
+    }
+
+    public void contarProfesorMasDe1EnDepartamento()
+    {
+
+        System.out.println(iProfesorRepository.countProfesorByDepartamentoMoreThan1());
+
+    }
+
 }

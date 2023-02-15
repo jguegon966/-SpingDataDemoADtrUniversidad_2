@@ -18,4 +18,18 @@ public class ConsultasAsignatura
 
     }
 
+    public void consultaAsignaturaPorGrado(String nombreGrado)
+    {
+
+        System.out.println(iAsignaturaRepository.findByGradoName(nombreGrado));
+
+    }
+
+    public void selectAsignaturaporIdGrado(String nombreGrado)
+    {
+
+        System.out.println(iAsignaturaRepository.findAsignaturaPorNombreGrado(nombreGrado));
+
+    }
+
 }

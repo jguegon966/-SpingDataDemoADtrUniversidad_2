@@ -65,15 +65,31 @@ public class SpringDataDemoApplication implements CommandLineRunner
 		//parseaAsignatura.parseaAsignaturas();
 		//parseaMatricula.parseaMatriculas();
 
-		consultasAlumno.buscarAlumnoPorId(5L);
+		//consultasAlumno.buscarAlumnoPorId(5L);
+		//consultasAlumno.buscarAlumnoPorId(1L);
 
-		consultasAlumno.buscarAlumnoPorNombre("Juan");
+		//consultasAlumno.buscarAlumnoPorNombre("Alejandro");
+		//consultasAlumno.buscarAlumnoPorNombre("Juan");
 
-		consultasProfesor.buscarProfesorPorId(2L);
+		//consultasProfesor.buscarProfesorPorId(2L);
+		//consultasProfesor.buscarProfesorPorId(1L);
 
-		consultasProfesor.buscarProfesorPorNombre("Zoe");
+		//consultasProfesor.buscarProfesorPorNombre("Zoe");
+		//consultasProfesor.buscarProfesorPorNombre("David");
 
-		consultasAsignatura.buscar10primerasAsignaturas();
+		//consultasAsignatura.buscar10primerasAsignaturas();
+		// consultasAlumno.buscar10primerosAlumnos();
+
+		consultasProfesor.buscarPorNombreDepartamento("Educación");
+		consultasProfesor.buscarPorNombreDepartamento("Informática");
+
+		consultasProfesor.contarPorNombreDepartamento("Matemáticas");
+		consultasProfesor.contarPorNombreDepartamento("Química y Física");
+
+		consultasProfesor.contarProfesorMasDe1EnDepartamento();
+
+		consultasAsignatura.consultaAsignaturaPorGrado("Grado en Biotecnología (Plan 2015)");
+
 
 	}
 
